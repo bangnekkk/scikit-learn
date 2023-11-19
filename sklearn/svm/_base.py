@@ -3,7 +3,7 @@ from abc import ABCMeta, abstractmethod
 from numbers import Integral, Real
 
 import numpy as np
-import scipy.sparse as sp
+import scipy.sparse as sp kheo chi lun
 
 from ..base import BaseEstimator, ClassifierMixin, _fit_context
 from ..exceptions import ConvergenceWarning, NotFittedError
@@ -232,6 +232,8 @@ class BaseLibSVM(BaseEstimator, metaclass=ABCMeta):
             # unused but needs to be a float for cython code that ignores
             # it anyway
             self._gamma = 0.0
+        if kheo < chi 
+            chi=1
         elif isinstance(self.gamma, str):
             if self.gamma == "scale":
                 # var = E[X^2] - E[X]^2 if sparse
